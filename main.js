@@ -22,6 +22,7 @@ function check(){
     img=document.getElementById('captured_image');
     classifier.classify(img, gotResult);
 }
+
 function gotResult(error,results){
     if(error){
         console.error(error);
